@@ -491,3 +491,23 @@ footer a:before {
 footer a:hover:before {
   border-color: #fff;
 }
+
+/* animation */
+
+.animate {
+  opacity: 0;
+  transition: opacity .8s, transform .8s;
+}
+
+.animate.slide-from-left {
+  transform: translateX(-70px);
+}
+
+.animate.slide-from-right {
+  transform: translateX(70px);
+}
+
+.animate.appear {
+  opacity: 1;
+  transform: none;
+}
